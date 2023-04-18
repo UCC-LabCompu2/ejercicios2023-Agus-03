@@ -1,0 +1,22 @@
+.noshadow{
+    box-shadow: 0px 0px rgba(200,0,0,1);
+}
+div{
+    border: 2px solid #ab709a;
+    margin: 1% 0.5% 1.5%;
+    padding: 1px 1px 1px 15px;
+    background-color: rgba(180, 232, 195, 0.46);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(46, 121, 67, 0.55);
+}
+#user {
+    float:left;
+    width: 120px;
+    margin: 13px 5px 0px;
+    border-radius: 50%;
+}
+body{
+    text-align: justify;
+    font-family: 'Poppins', cursive;
+    background: linear-gradient(to bottom, #c0b9b9, #768a86);
+}
