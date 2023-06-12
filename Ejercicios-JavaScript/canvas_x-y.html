@@ -5,6 +5,7 @@
     <title>Canvas con Circulo y Cuadrado</title>
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
     <link href="miEstilo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="misFunciones.js"></script>
 </head>
 
 <body>
@@ -19,15 +20,21 @@
         <p>
             <label for="posicionY"> Y</label> = <input id="posicionY" type="text" name="inp_y">
         </p>
-        <button>
+        <button type="button" onclick="dibujarImg(inp_x.value, inp_y.value)">
             Dibujar!
         </button>
     </form>
 </div>
 
-<canvas id="myCanvas" class="ejer">
+<canvas id="myCanvas" class="ejer" width="1000px" height="500px">
     Tu navegador no soporta el tag de HTML5 canvas.
 </canvas>
+
+<dialog id="myDialog">
+    <h3>Error al ingresar datos</h3>
+    <p>Coordenadas fuera del lienzo</p>
+    <button type="button" onclick="cerrarDialogo()">Cerrar</button>
+</dialog>
 
 </body>
 </html>
